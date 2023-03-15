@@ -1,0 +1,15 @@
+#!/bin/bash
+
+dir=$(find / -type d -name $1)
+
+cd $dir 
+
+
+# add files you want to push
+git add .
+
+# ## use $1 as a commend message
+git commit -m $2
+
+## push your files to github
+git push -u origin main
