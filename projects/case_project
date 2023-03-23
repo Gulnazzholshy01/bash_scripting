@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "Welcome to DREAM TRAVEL"
+
+PS3="What city you are interested in?  "
+select city in Tokyo London "Los Angeles" Moscow Dubai "New York" Paris Bangalore Manchester Johannesburg Istanbul Milan "Abu Dhabi" Pune Nairobi Berlin Karachi; 
+do
+    case "$city" in
+        London | Manchester) echo "This city is in England";;
+        "Los Angeles" | "New York") echo "This city is in the USA";;
+        Tokyo | Karachi) echo "This city is in Japan";;
+        Moscow) echo "This city is in Russia";;
+        "Abu Dhabi" | Dubai) echo "This city is in United Arab Imirates";;
+        Berlin) echo "This city is in Germany";;
+        Bangalore | Pune) echo "This city is in India";;
+        Istanbul) echo "Thid city is in Turkey";;
+        Paris) echo "This city is in France";;
+        Johannesburg) echo "This city is in South AFrica";;
+        Milan) echo "This city is in Italy";;
+    esac
+done
+

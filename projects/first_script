@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "This is my first line"
+exit 0 
+
+# Author: Gulnaz
+# Date Created: 03/14/2023
+# Last Modified: 03/14/2023
+
+# Descriptin
+# Prints "This is  my first script" to the terminal
+
+# Usage
+# first_script

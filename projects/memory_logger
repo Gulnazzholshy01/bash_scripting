@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ ! -d $HOME/performance ]; then
+    mkdir /$HOME/performance
+else
+    echo "The directory already exists"
+fi
+
+free -h > /$HOME/performance/memory.log 
+
+

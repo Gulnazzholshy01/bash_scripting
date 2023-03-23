@@ -1,0 +1,9 @@
+#!/bin/bash
+
+readarray -t urls < urls.txt
+mkdir headers
+dir=headers  
+for headers in ${urls[@]}; do
+       curl --head $headers > /root/bash_udemy/$dir/url_header_$headers.txt
+done
+
